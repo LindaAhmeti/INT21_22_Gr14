@@ -32,10 +32,10 @@
   }
   li {
     float: left;
-    width: 379px;
+    width: 384px;
   }
   
-  li a {
+  .home{
     display: block;
     color: white;
     text-align: center;

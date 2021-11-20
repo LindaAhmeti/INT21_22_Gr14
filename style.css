@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+ /* body {
+    background-image: url('foto.jpg');
+  
+
+  }*/
+
+
+  
+      ul {
+        
+      
+        padding-inline-end: 0;
+        display:inline-block;
+    list-style-type: none;
+  line-height: 100px;
+    background-color: #111111;
+  }
+  h1{
+    text-shadow: #242121;
+
+  text-align: center;
+          margin: 0;
+          font-size: 70px;
+          font-weight: bolder;
+         font-family: 'Playfair Display', serif;
+          text-decoration: solid;
+          background-color: #111111;
+  }
+  li {
+    float: left;
+    width: 379px;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0  20px;
+    text-decoration: none;
+  }
+  a:hover {
+    color: red;
+    background-color: #242121;
+    
+  }

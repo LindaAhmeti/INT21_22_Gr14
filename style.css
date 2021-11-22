@@ -51,19 +51,18 @@ display: flex;
 }
 #akutale{
   width: 200px;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: white;
   margin: auto 0;
 }
 .lajmeaktuale{
-  padding: 30px;
+  padding: 15px;
   color: #fff;
   font-weight: 800;
   display: inline-block;
+  text-decoration: none;
 }
 .lajmeaktuale:hover{
   background-color: #242121;
+  cursor: pointer;
 }
 .data{
   display: inline-block;

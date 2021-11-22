@@ -70,3 +70,9 @@ display: flex;
   padding: 0 10px;
   font-size: 13px;
 }
+ol li{
+  font-size: medium;
+  text-decoration: none;
+  float:none;
+
+}

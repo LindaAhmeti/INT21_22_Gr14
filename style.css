@@ -109,3 +109,25 @@ ol li{
       font-size: 14px;
       font-weight: 400;
       }
+     .tabela table{
+        display: table;
+        border: collapse 0px;
+        box-sizing: border-box;
+        text-indent:initial;
+        border-spacing: 0px;
+        float: left;
+        
+    }
+    .tabela table th{
+      text-decoration: dotted;
+      border: thin;
+      background-color:floralwhite;
+      border-style: solid;
+       border-collapse:collapse ;
+  text-align: center;
+  size: 50px; ;}
+  .tabela table td{
+  background-color:rgb(168, 186, 240);
+  border-color: rgb(122, 143, 207);
+  text-align: center;
+ color: seashell;}

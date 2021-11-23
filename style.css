@@ -5,19 +5,19 @@
 
 
 header{
-background-color: black;
+background-color: blanchedalmond;
 }
 
     .ul1 {
       padding-inline-end: 0;
       display:inline-block;
   list-style-type: none;
-line-height: 100px;
+line-height: 90px;
   
 }
 
 .h1{
-  text-shadow: #242121;
+  text-shadow: rosybrown;
 text-align: center;
         margin: 0;
         font-size: 70px;
@@ -28,12 +28,12 @@ text-align: center;
 }
 li {
   float: left;
-  width: 384px;
+  width: 375px;
 }
 
 .home{
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   margin: 0;
   padding: 0  20px;
@@ -42,8 +42,8 @@ li {
   font-size: 20px;
 }
 .home:hover {
-  color: red;
-  background-color: #242121;
+  color: rebeccapurple;
+  background-color: rosybrown;
   
 }
 .bnews{
@@ -56,13 +56,13 @@ display: flex;
 }
 .lajmeaktuale{
   padding: 15px;
-  color: #fff;
+  color: black;
   font-weight: 800;
   display: inline-block;
   text-decoration: none;
 }
 .lajmeaktuale:hover{
-  background-color: #242121;
+  background-color: wheat;
   cursor: pointer;
 }
 .data{
@@ -109,25 +109,38 @@ ol li{
       font-size: 14px;
       font-weight: 400;
       }
-     .tabela table{
+     .tabela {
+
         display: table;
         border: collapse 0px;
         box-sizing: border-box;
         text-indent:initial;
         border-spacing: 0px;
-        float: left;
+        float: center;
+        border-left: 10px;
+        border-right: 10px;
+        margin: 0 auto;
+        left: 0px;
+        right: 0px;
+        
         
     }
     .tabela table th{
+
       text-decoration: dotted;
       border: thin;
       background-color:floralwhite;
       border-style: solid;
        border-collapse:collapse ;
   text-align: center;
-  size: 50px; ;}
+  size: 90px; 
+}
+
   .tabela table td{
   background-color:rgb(168, 186, 240);
   border-color: rgb(122, 143, 207);
   text-align: center;
- color: seashell;}
+ color: seashell;
+
+ 
+}

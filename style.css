@@ -208,7 +208,6 @@ text-decoration: none;
   height: 500px;
 
 }
-<<<<<<< HEAD
 #popular-news{
   display: flex;
   margin: 30px 5%;
@@ -254,7 +253,10 @@ text-decoration: none;
 .news-container:hover>.popular-news-text{
   bottom: 10px;
 }
-=======
+#featured img{
+  height: 900px;
+  width: 1500px;
+  }
 .footer{
   background-color: blanchedalmond;
 
@@ -297,4 +299,3 @@ text-decoration: none;
   font-size: 1rem;
 
 }
->>>>>>> bfa732de9c4b5871625d8a358715d929d7bdec99

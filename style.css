@@ -223,10 +223,11 @@ text-decoration: none;
   
 }
 #h3{
-  margin-right: 50px;
+  margin-right: 100px;
   margin-bottom: 2rem;
   flex-direction: column;
   display: flex;
+  
 }
 #footer-email{
   width: 250px;
@@ -252,4 +253,7 @@ text-decoration: none;
 }
 .sport{
   text-align: center;
+}
+.footer-1{
+  width: 350px;
 }

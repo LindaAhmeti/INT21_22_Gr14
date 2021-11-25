@@ -9,10 +9,10 @@ background-color: blanchedalmond;
 }
 
     .ul1 {
-      padding-inline-end: 0;
       display:inline-block;
   list-style-type: none;
 line-height: 90px;
+
   
 }
 
@@ -175,7 +175,7 @@ text-decoration: none;
 
      .lajm{
        text-align: center;
-       
+
      }  
      
 .kultura table td{
@@ -208,6 +208,7 @@ text-decoration: none;
   height: 500px;
 
 }
+<<<<<<< HEAD
 #popular-news{
   display: flex;
   margin: 30px 5%;
@@ -253,3 +254,47 @@ text-decoration: none;
 .news-container:hover>.popular-news-text{
   bottom: 10px;
 }
+=======
+.footer{
+  background-color: blanchedalmond;
+
+}
+.footer-0{
+  width: 80%;
+  height: 180px;
+  color: black;
+  display: flex ;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  
+}
+#h3{
+  margin-right: 50px;
+  margin-bottom: 2rem;
+  flex-direction: column;
+  display: flex;
+}
+#footer-email{
+  width: 250px;
+  height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+#footer-email::placeholder{
+  color: rgb(97, 199, 199);
+}
+#footer-email-buton{
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  background-color:burlywood;
+  border: none;
+  color: black;
+  font-size: 1rem;
+
+}
+>>>>>>> bfa732de9c4b5871625d8a358715d929d7bdec99

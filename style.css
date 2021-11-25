@@ -120,11 +120,9 @@ ol li{
         text-indent:initial;
         border-spacing: 0px;
         float: center;
-        border-left: 10px;
-        border-right: 10px;
+     
         margin: 0 auto;
-        left: 0px;
-        right: 0px;
+        width: 100%;
         
         
     }
@@ -135,8 +133,8 @@ ol li{
       background-color:floralwhite;
       border-style: solid;
        border-collapse:collapse ;
-  text-align: center;
-  size: 90px; 
+       text-align: center;
+      size :90px;
 }
 
   .tabela table td{
@@ -144,10 +142,24 @@ ol li{
   border-color: rgb(122, 143, 207);
   text-align: center;
  color: seashell;
+<<<<<<< HEAD
 
  
 }
 .kultura h1{
 display:flex;
 color: black;
+=======
+}
+.tabela-lajme{
+  border:1px;
+    width:100% ;
+    height: auto;
+}
+.li-lajme{
+  height: 80px;
+  background-color: lightsteelblue;
+  border-radius: 5px;
+  color:rgb(70, 70, 146);
+>>>>>>> af313623f38d95c45a8f3b5c70928981679ab4f7
 }

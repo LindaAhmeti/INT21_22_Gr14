@@ -146,9 +146,10 @@ ol li{
 
  
 }
-.kultura h1{
+.kultura h1 a{ 
 display:flex;
 color: black;
+text-decoration: none;
 }
 .tabela-lajme{
   border:1px;
@@ -168,7 +169,7 @@ color: black;
        
  margin: 10px;
         width: 50%;
-        background-color:floralwhite;
+        
         float: right;
 }
 
@@ -176,25 +177,32 @@ color: black;
      
 .kultura table td{
   text-align: center;
-  
   border: 2px solid  powderblue;
+  height: 40px;
+  background-color: rgb(243, 168, 168);
  
   
 }
 .kultura table th{
   text-align: center;
-  
+  height: 40px;
   border: 2px solid  powderblue;
+  background-color: rgb(243, 168, 168);
+ 
  
 }
 .kultura table caption{
   text-align: center;
-  
+  height: 40px;
   border: 2px solid  powderblue;
+  padding-top: 20px;
+  background-color: rgb(243, 168, 168);
+ 
  
 }
 .kultura img{
-  width: 800px;
+  width: 700px;
   height: 500px;
 
 }
+3

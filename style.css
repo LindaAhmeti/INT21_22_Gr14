@@ -207,7 +207,56 @@ text-decoration: none;
   width: 700px;
   height: 500px;
 
+}/*
+#popular-news{
+  display: flex;
+  margin: 30px 5%;
 }
+#popular-news img{
+  width: 100%;
+  filter: brightness(0.7);
+}
+#popular-news h2{
+  margin: 0;
+  padding: 5px;
+  color: #fff;
+}
+#featured h2{
+  background-color:black ;
+  
+}
+#latest h2{
+  background-color: darkred;
+}
+#our-picks h2{
+  background-color: darkblue;
+}
+.popular-news-text{
+  font-size: 14px;
+  position: absolute;
+  color: #fff;
+  z-index: 2;
+  bottom:5px ;
+  font-size: 24px;
+  font-weight: bolder;
+  padding: 0 10px;
+ 
+  transition-duration: 500ms;
+}
+#featured{
+  flex: 2;
+
+}
+#latest, #our-picks{
+  flex: 1;
+}
+.news-container:hover>.popular-news-text{
+  bottom: 10px;
+}
+#featured img{
+  height: 900px;
+  width: 1500px;
+  }*/
 .footer{
   background-color: blanchedalmond;
 
@@ -223,11 +272,10 @@ text-decoration: none;
   
 }
 #h3{
-  margin-right: 100px;
+  margin-right: 50px;
   margin-bottom: 2rem;
   flex-direction: column;
   display: flex;
-  
 }
 #footer-email{
   width: 250px;
@@ -253,7 +301,5 @@ text-decoration: none;
 }
 .sport{
   text-align: center;
-}
-.footer-1{
-  width: 350px;
+  
 }

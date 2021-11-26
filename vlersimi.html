@@ -4,14 +4,21 @@
     <title>Vlersimi</title>
 </head>
 <style>
+    *{
+        background-color: rgb(203, 212, 240);
+        margin-left: 5px;
+    }
     h1{
         text-align: center;
     }
     p{
         text-align: center;
+        size: 15px;
     }
     label{
         text-align: center;
+        background-color: seashell;
+
     }
   
 </style>
@@ -22,13 +29,14 @@
     <form>
 <label><b>Emri dhe mbiemri:</b><br>
     <input type="text" name="Emri dhe mbiemri:" placeholder="Sheno">
-</label><br>
+</label><br><br>
+
 <label><b>Gjinia</b><br>
-        <input type="radio" name="Femer">Femer<br>
-        <input type="radio" name="Mashkull">Mashkull<br>
-    </label><br>
+        <input type="radio" name="Gjinia">Femer<br>
+        <input type="radio" name="Gjinia">Mashkull<br>
+    </label><br><br>
     <label><b>Ditelindja</b><br>
-        <input type="date" name="bday"><br>
+        <input type="date" name="bday"><br><br>
        
         <label><b>Vendbanimi</b><br>
 <select name="Vendbanimi">
@@ -38,7 +46,7 @@
                 <option value ="3">Diaspora
         
 </select>
-</label><br>
+</label><br><br>
 <label><b>Cilat rubrika ju pelqejne me shum ne faqen tone?</b><br>
     <input type="checkbox" name="Lajme">Lajme<br>
     <input type="checkbox" name="Shendetesi">Shendetesi<br>
@@ -46,22 +54,22 @@
     <input type="checkbox" name="Beauty">Beauty<br>
     <input type="checkbox" name="Horoskop">Horoskop<br>
     <input type="checkbox" name="Sport">Sport<br>
-</label><br>
+</label><br><br>
 <label><b>Cfare lajmesh do te donit te shihni me shpesh?</b> <br>
     <input type="text" placeholder="Sheno">
-</label><br>
+</label><br><br><br>
 <label><b>A keni hasur ne ndonje problem gjate kyqjes ne faqen tone?</b> <br>
     <input type="text" placeholder="Sheno">
-</label><br>
-<label><b>Nga 1 deri ne 10, sa e vleresoni faqen tone?</b><br>
-    <input type="radio" >1<br>
-    <input type="radio" >2<br>
-    <input type="radio" >3<br>
-    <input type="radio" >4<br>
-    <input type="radio" >5<br>
-    <a href="End.html"> <button type="button">Dergo</button></a>
-   
-</label><br>
+</label><br><br><br>
+<label><b>Nga 1 deri ne 5, sa e vleresoni faqen tone?</b><br>
+    <input type="radio" name="vlerso" value="1">1<br>
+    <input type="radio"name="vlerso" value="2">2<br>
+    <input type="radio" name="vlerso"value="3">3<br>
+    <input type="radio" name="vlerso"value="4">4<br>
+    <input type="radio" name="vlerso"value="5">5<br>
+    
+</label><br><br>
+<a href="End.html"> <button type="button">Dergo</button></a>
     
 </form>
 

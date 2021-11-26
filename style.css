@@ -225,6 +225,7 @@ text-decoration: none;
   
 }
 #h3{
+  margin-right: 100px;
   margin-right: 50px;
   margin-bottom: 2rem;
   flex-direction: column;
@@ -251,6 +252,9 @@ text-decoration: none;
   color: black;
   font-size: 1rem;
 
+}
+.footer-1{
+  width: 350px; 
 }
 .sport{
   text-align: center;

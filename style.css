@@ -269,3 +269,8 @@ text-decoration: none;
   
 
   }
+.highlight{
+  background-image: linear-gradient(to right, #f9989f,#fccb8f,#faf096);
+  border-radius: 6px;
+  padding: 3px 6px;
+}

@@ -13,47 +13,77 @@
 <style>
     *{
         background-color: rgb(203, 212, 240);
-        margin-left: 5px;
+        margin-left: 30px;
+        text-align: left;
     }
     h1{
         text-align: center;
+        margin-top: 5%;
     }
     p{
         text-align: center;
         size: 15px;
     }
-    label{
-        text-align: center;
-        background-color: seashell;
+.emri{
+      margin: 50px 60px 50px 80px;
+      font-size: 20px;
+   }
 
-    }
-  
+.gjinia{
+    font-size: 20px;
+    text-align: left;
+    margin: 20px 60px 50px 80px;
+}
+.ditelindja{
+    margin: 20px 60px 50px 80px;
+    font-size: 20px;
+}
+.vendbanimi{
+    margin: 20px 90px 50px 0px;
+}
+.rubrika{
+   margin-left: 5px;
+}
+.pytje{
+ margin-left: 5px;
+}
 </style>
 </head>
 <body>
 
     <h1 ><b>Pyetësor</b></h1>
-    <p style="color: red;"><b> Ky pyetesor nuk ka per qellim marrjen e te dhenave tuaja, vetem na ndihmon neve si faqe qe te gjejme mangesite tona dhe t'i permisojme ato. </b></p>
-    <form>
-<label><b>Emri dhe mbiemri:</b><br>
-    <input type="text" name="Emri dhe mbiemri:" placeholder="Sheno">
-</label><br><br>
+    <p style="color: red;"><b> **Ky pyetesor nuk ka per qellim marrjen e te dhenave tuaja, vetem na ndihmon neve si faqe qe te gjejme mangesite tona dhe t'i permisojme ato. </b></p>
+   
+    <form class="emri">
+       <label><b>Emri dhe mbiemri:</b><br> <br>
+       <input type="text" name="Emri dhe mbiemri:" placeholder="Sheno"  style="color: rgb(97, 157, 175); background-color: floralwhite; height: 30px;width: 150px;">
+       </label><br><br>
+    </form>
 
+
+<form class="gjinia">
 <label><b>Gjinia</b><br>
         <input type="radio" name="Gjinia">Femer<br>
         <input type="radio" name="Gjinia">Mashkull<br>
     </label><br><br>
-    <label><b>Ditelindja</b><br>
-        <input type="date" name="bday"><br><br>
-       
+</form>
+
+<form class="ditelindja">
+    <label><b>Ditelindja</b><br> <br>
+        <input type="date" name="bday" style="color: rgb(97, 157, 175); background-color: floralwhite; height: 30px;width: 150px;"><br><br>
+    </form>
+
+    <form class="vendbanimi">
         <label><b>Vendbanimi</b><br>
-<select name="Vendbanimi">
+<select name="Vendbanimi" style="background-color: floralwhite; color: rgb(97, 157, 175); height: 30px; width: 150px;">
     <option value ="0">Kosove
         <option value ="1">Shqiperi
             <option value ="2">Maqedoni
-                <option value ="3">Diaspora
-        
+                <option value ="3">Diaspora                
 </select>
+</form>
+
+<form class="rubrika">
 </label><br><br>
 <label><b>Cilat rubrika ju pelqejne me shum ne faqen tone?</b><br>
     <input type="checkbox" name="Lajme">Lajme<br>
@@ -63,12 +93,15 @@
     <input type="checkbox" name="Horoskop">Horoskop<br>
     <input type="checkbox" name="Sport">Sport<br>
 </label><br><br>
+</form>
+
+<form  class="pytje">
 <label><b>Cfare lajmesh do te donit te shihni me shpesh?</b> <br>
-    <input type="text" placeholder="Sheno">
+    <input type="text" placeholder="Sheno" style="color: rgb(97, 157, 175); background-color: floralwhite; height: 30px;width: 150px;">
 </label><br><br><br>
-<label><b>A keni hasur ne ndonje problem gjate kyqjes ne faqen tone?</b> <br>
-    <input type="text" placeholder="Sheno">
-</label><br><br><br>
+<label><b>A keni hasur ne ndonje problem gjate kyqjes ne faqen tone?</b> <br> 
+    <input type="text" placeholder="Sheno" style="color: rgb(97, 157, 175); background-color: floralwhite; height: 30px;width: 150px;">
+</label><br> <br> <br>
 <label><b>Nga 1 deri ne 5, sa e vleresoni faqen tone?</b><br>
     <input type="radio" name="vlerso" value="1">1<br>
     <input type="radio"name="vlerso" value="2">2<br>
@@ -76,8 +109,8 @@
     <input type="radio" name="vlerso"value="4">4<br>
     <input type="radio" name="vlerso"value="5">5<br>
     
-</label><br><br>
-<a href="End.html"> <button type="button">Dergo</button></a>
+</label>
+<a href="End.html"> <button type="button" style="color:black; background-color: burlywood;">Dergo</button></a>
     
 </form>
 

@@ -11,7 +11,7 @@
 
 
 <style>
-    *{
+    form{
         background-color: rgb(203, 212, 240);
         margin-left: 30px;
         text-align: left;
@@ -50,7 +50,51 @@
 </style>
 </head>
 <body>
-
+    <header>
+     
+        <h1 class="h1"> <span style="color: black;">Gazeta</span> <span style="color:darkolivegreen;"> X </span>  </h1>
+      
+     
+        <ul class="ul1">
+          <li><a href="index.html"  class="home">Ballina</a></li>
+          <li><a href="lajme.html" target="_blank" class="home">Lajme</a></li>
+          <li><a href="kulture.html" target="_blank" class="home">Kulturë</a></li>
+          <li><a href="sport.html" target="_blank" class="home">Sport</a></li>
+        </ul>
+    
+    
+        
+      <div class="bnews">
+          <span id="aktuale"></span>
+    <marquee direction="left">
+        <a href="https://www.youtube.com/watch?v=d08hBzOywqo" class="lajmeaktuale">
+            <p class="data"> 08:00</p>
+       Lajmet e mengjesit.
+        </a><a href="https://www.youtube.com/watch?v=VPXvaYVus9o" class="lajmeaktuale">
+            <p class="data"> 11:00</p>
+        Emisioni per femije.
+        </a> <a href="https://www.youtube.com/watch?v=BGrlUGpXsjM" class="lajmeaktuale">
+            <p class="data"> 13:00</p>
+        Promo
+        </a> <a href="https://www.youtube.com/watch?v=m01j1YkvYuw" class="lajmeaktuale">
+            <p class="data"> 15:00</p>
+        Lajmet e pasdites.
+        </a>
+    </a> <a href="https://www.youtube.com/watch?v=B3KwjccHjhU" class="lajmeaktuale">
+        <p class="data"> 17:00</p>
+    Desku informativ.
+    </a> <a href="https://www.youtube.com/watch?v=jb35Y4ZndeE" class="lajmeaktuale">
+        <p class="data"> 20:00</p>
+     Filma.
+    </a>
+    
+    </marquee>
+    
+    
+    
+      </div>
+    </header>
+<div id="pyetesori">
     <h1 ><b>Pyetësor</b></h1>
     <p style="color: red;"><b> **Ky pyetesor nuk ka per qellim marrjen e te dhenave tuaja, vetem na ndihmon neve si faqe qe te gjejme mangesite tona dhe t'i permisojme ato.** </b></p>
    
@@ -110,9 +154,14 @@
     <input type="radio" name="vlerso" value="5">5<br>
     
 </label>
-<a href="End.html"> <button type="button" style="color:black; background-color: burlywood; height: 40px; width: 80px; font-size:20px;">Dergo</button></a>
+
+<button type="button" onclick="document.getElementById('pyetesori').innerHTML='Faleminderit' ";style="color:black;size:70px; background-color: blue; height: 60px; width: 80px; font-size:20px; margin-left:500px;margin-right:400px;">Dergo</button>
     
 </form>
+</div>
+ 
+
+    
 
 </body>
 </html>

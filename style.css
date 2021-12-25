@@ -12,10 +12,25 @@ background-color: blanchedalmond;
       display:inline-block;
   list-style-type: none;
 line-height: 90px;
+/*transition: width 5s, height 5s;*/
+/*transform: translate(40px,60px);*/
 
+ 
+/*animation: animacioniINT 10s;
+animation-play-state: running;
+animation-iteration-count: infinite;
+*/
   
 }
-
+@keyframes animacioniINT 
+      {
+        0%    {background-color: pink;}
+        25%  {background-color: palevioletred;}
+        50% {background-color: blueviolet;}
+        75% {background-color: darkorchid;}
+        100% {background-color: darkslateblue;}
+      
+      }
 .h1{
   text-shadow: rosybrown;
 text-align: center;
@@ -44,11 +59,15 @@ li {
 .home:hover {
   color: rebeccapurple;
   background-color: rosybrown;
+  transform: translate(20px,20px);/*ndryshim*/
   
 }
 .bnews{
 padding: 0 30px 0 60px;
 display: flex;
+animation: animacioniINT 10s;/*ndryshim*/
+animation-play-state: running;
+animation-iteration-count: infinite;
 }
 #akutale{
   width: 200px;
@@ -64,6 +83,7 @@ display: flex;
 .lajmeaktuale:hover{
   background-color: wheat;
   cursor: pointer;
+  
 }
 .data{
   display: inline-block;
@@ -267,6 +287,9 @@ text-decoration: none;
   margin-right: 50px;
   margin-left: 50px;
   
+  
+  
+  
 
   }
 .highlight{
@@ -274,3 +297,18 @@ text-decoration: none;
   border-radius: 6px;
   padding: 3px 6px;
 }
+#rotate{
+  -webkit-transform:rotate(0.5deg);
+  transform:rotate(0.5deg); 
+}
+ #scale
+        {
+            -webkit-transform:scale(1,1.5);
+            transform:scale(1,1.5);}
+
+            #skew
+        {
+            -webkit-transform:skew(5deg,2.5deg);
+             transform:skew(5deg,2.5deg);}
+            
+            

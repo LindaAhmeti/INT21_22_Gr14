@@ -15,6 +15,10 @@ line-height: 90px;
 
   
 }
+#etc1{
+  transform: translate(50px,50px);
+}
+
 
 .h1{
   text-shadow: rosybrown;

@@ -22,19 +22,27 @@ animation-iteration-count: infinite;
 */
   
 }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+@keyframes animacionet
+=======
+<<<<<<< HEAD
+>>>>>>> 0702033d880edbf8a556b91e06b814a8832da858
 #etc1{
   transform: translate(50px,50px);
 }
 
 
 @keyframes animacioniINT 
+>>>>>>> 7670e2e0ea7d141504802efd6dea10b35798e2bd
       {
         0%    {background-color: pink;}
         25%  {background-color: palevioletred;}
-        50% {background-color: blueviolet;}
-        75% {background-color: darkorchid;}
-        100% {background-color: darkslateblue;}
+        50% {background-color:rgb(180, 136, 221);}
+        75% {background-color: rgb(140, 107, 156);}
+        100% {background-color: rgb(161, 154, 212);}
       
       }
 
@@ -72,9 +80,10 @@ li {
 .bnews{
 padding: 0 30px 0 60px;
 display: flex;
-animation: animacioniINT 10s;/*ndryshim*/
+animation: animacionet 10s;/*ndryshim*/
 animation-play-state: running;
 animation-iteration-count: infinite;
+position: relative;
 }
 #akutale{
   width: 200px;

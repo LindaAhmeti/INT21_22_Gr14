@@ -22,13 +22,12 @@ animation-iteration-count: infinite;
 */
   
 }
-<<<<<<< HEAD
+
 #etc1{
   transform: translate(50px,50px);
 }
 
 
-=======
 @keyframes animacioniINT 
       {
         0%    {background-color: pink;}
@@ -38,7 +37,7 @@ animation-iteration-count: infinite;
         100% {background-color: darkslateblue;}
       
       }
->>>>>>> c7e945c3f4e182227271a7577a3cbd7dc81a9a2b
+
 .h1{
   text-shadow: rosybrown;
 text-align: center;

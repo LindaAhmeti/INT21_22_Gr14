@@ -22,10 +22,12 @@
   transition-duration: 0.4s;
   cursor: pointer;
 }
+
     form{
         background-color: rgb(203, 212, 240);
         margin-left: 30px;
         text-align: left;
+        background-repeat: repeat-x;
     }
     h1{
         text-align: center;
@@ -110,25 +112,25 @@
       </div>
     </header>
     
-
-       
-<div id="pyetesori">
-    <h1 ><b>Pyetësor</b></h1>
     <script>
         x = prompt("Sa vjeq jeni?", "");
-    if(x>18){
-        document.write('Mireserdhet<br>')
+    if(x>=18){
+        document.write('<h2 style="text-align:center;">Mireserdhet<br></h2>')
     }
     else{
-        document.write('Ju jeni nen moshen 18 vjeqare')
+        document.write('<h2 style="text-align:center;">Ju jeni nen moshen 18 vjeqare<h2>')
     }
     
     </script>
+       
+<div id="pyetesori">
+    <h1 ><b>Pyetësor</b></h1>
+    
     <p style="color: red;"><b> **Ky pyetesor nuk ka per qellim marrjen e te dhenave tuaja, vetem na ndihmon neve si faqe qe te gjejme mangesite tona dhe t'i permisojme ato.** </b></p>
    
     <form class="emri">
        <label><b>Emri dhe mbiemri:</b><br>  <br>
-       <input type="text" name="Emri dhe mbiemri:" placeholder="Sheno"  style="color: rgb(97, 157, 175); background-color: floralwhite; height: 30px;width: 150px;">
+       <input type="text" name="Emri dhe mbiemri:" placeholder="Sheno" autocomplete="on" style="color: rgb(97, 157, 175); background-color: floralwhite; height: 30px;width: 150px;">
        </label><br><br>
     </form>
 
@@ -183,7 +185,7 @@
     
 </label>
 
-<button type="button" onclick="document.getElementById('pyetesori').innerHTML='Faleminderit' ">Dergo</button>
+<button type="button" onclick="document.getElementById('pyetesori').innerHTML='<h1> Faleminderit!</h1>' ">Dergo</button>
     
 </form>
 </div>

@@ -23,15 +23,18 @@ animation-iteration-count: infinite;
   
 }
 <<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
 @keyframes animacionet
 =======
 <<<<<<< HEAD
+>>>>>>> 0702033d880edbf8a556b91e06b814a8832da858
 #etc1{
   transform: translate(50px,50px);
 }
 
 
-=======
 @keyframes animacioniINT 
 >>>>>>> 7670e2e0ea7d141504802efd6dea10b35798e2bd
       {
@@ -42,7 +45,7 @@ animation-iteration-count: infinite;
         100% {background-color: rgb(161, 154, 212);}
       
       }
->>>>>>> c7e945c3f4e182227271a7577a3cbd7dc81a9a2b
+
 .h1{
   text-shadow: rosybrown;
 text-align: center;

@@ -22,21 +22,15 @@ animation-iteration-count: infinite;
 */
   
 }
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-@keyframes animacionet
-=======
-<<<<<<< HEAD
->>>>>>> 0702033d880edbf8a556b91e06b814a8832da858
+
 #etc1{
   transform: translate(50px,50px);
 }
 
 
-@keyframes animacioniINT 
->>>>>>> 7670e2e0ea7d141504802efd6dea10b35798e2bd
+@keyframes animacionet
+
       {
         0%    {background-color: pink;}
         25%  {background-color: palevioletred;}

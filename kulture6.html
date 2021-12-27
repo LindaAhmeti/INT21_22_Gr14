@@ -101,7 +101,7 @@ Desku informativ.
             var poetet=["Bayron","Aligeri","Servantesi","Dostojevski","Tolstoi"];
             poetet1=poetet.join(", ");
             document.getElementById("p1").innerHTML=poetet1;
-            
+            //METODA E SORTIMIT TE ELEMENTEVE
             poetet.sort();
             document.getElementById("p2").innerHTML=poetet;
             </script>
@@ -146,6 +146,26 @@ Vlen të ceket se shkëmbimet kulturore mes Shqipërisë e Kosovës, me vizita t
     </dl>
 
 </p>
+<p id="personi"></p>
+<script>
+
+    // Constructor function for Person objects
+    function Person(emri,mbiemri,vitilindjes) {
+      this.emri1=emri;
+      this.mbiemri1=mbiemri;
+      this.viti=vitilindjes;
+      
+    }
+    
+    // Create two Person objectsb
+    const Kadare = new Person("Ismail","Kadare","1936");
+    
+    // Display age
+    document.getElementById("personi").innerHTML="Ismail Kadare lindi ne vitin "+Kadare.vitilindjes+"."; 
+    
+    </script>
+    <br>
+    
 <footer class="footer">
     <div class="footer-0">
         <div class="footer-1">

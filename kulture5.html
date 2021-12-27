@@ -90,7 +90,28 @@ Edhe pse kishte marrë kërcënimin direkt nga Enver Hoxha, Hamiti vazhdoi të m
 
 Nga libri i Kokalarit, “Kosova, djepi i shqiptarizmit”,<br> kemi përzgjedhur dhe po publikojmë në variantin origjinal vetëm disa pjesë të tij, duke menduar se hidhet edhe më shumë dritë mbi të vërtetën e shqiptarëve<br> të Kosovës dhe viseve të tjera shqiptare, të cilat iu shkëputën padrejtësisht trungut mëmë, në mesin e shekullit XIX dhe në fillimin e dekadës së dytë të shekullit XX.
 
+<p><b> Nderroni vendin e librave me te famshëm te Ismail Kadare </b></p>
 
+<button onclick="funcreplace()">Provo</button>
+
+<p id="replace">Keshtjella dhe Kronike</p>
+
+<script>
+function funcreplace() {
+  let text = document.getElementById("replace").innerHTML; 
+  document.getElementById("replace").innerHTML =
+  text.replace("Keshtjella","Kronike");
+}
+</script>
+<p>Sa here eshte perdorur fjala eshte ne kete tekst</p>
+<p id="match"></p>
+
+<script>
+let text = "Sa here eshte perdorur fjala eshte ne kete tekst";
+let result = text.match(/eshte/g);
+ 
+document.getElementById("match").innerHTML = result;
+</script>
 
 
 </p>

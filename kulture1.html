@@ -69,6 +69,22 @@
 <br>
 <br>
 <br>
+<script>
+    ora=prompt("sa eshte ora","");
+       
+       var pershendetja="Miremengjesi!";
+       if(ora<=12)
+       {
+            alert(pershendetja);
+       }
+       else if(ora>12&&ora<18)
+       {
+          pershendetja = "Miredita!"; 
+alert(pershendetja);
+
+       }
+      
+</script>
 <h1>
     Viti 1973, studentët nga Kosova dhe përshtypjet e tyre nga Korça.
 </h1>
@@ -82,6 +98,22 @@
     <li>2.Ukë Bashota,</li>
     <li>3.Ahmet Qeriqi,</li>
     <li>4.Sadete Emërllahu.</li></b></ol> 
+    <br><br><br>
+    <p>Nder te paret nga ta kane qene:</p>
+    <p id="pare"></p>
+
+<script>
+const cars = ["Uka","Ahmeti","Sadetja"];
+let i = 2;
+let len = cars.length;
+let text = "";
+
+for (; i < len; i++) {
+  text += cars[i] + "<br>";
+}
+
+document.getElementById("pare").innerHTML = text;
+</script>
 
 <br><b><i>
 Vlen të ceket se shkëmbimet kulturore mes Shqipërisë e Kosovës, me vizita të ndërsjella të studentëve, pedagogëve e krijuesve, ndërpriten<br> pas demonstratave të vitit 1981 në Kosovë.</i> </b></p>

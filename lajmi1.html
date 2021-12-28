@@ -12,28 +12,7 @@
       
       <!-- style.css file link-->
          <link rel="stylesheet" href="style.css">
-         <script>
-
-            
-            function    Qeni(emri, ngjyra, viti) {
-              this.emri1 = emri;
-              this.ngjyra1 = ngjyra;
-              this.viti1 = viti;
-             
-            }
-            
-           
-            const boji = new Qeni ("Boji", "zi", 6);
-            
-            
-            
-            boji.vitii = function() {
-              return this.viti1;
-            };
-            
-            
-            document.getElementById("qeni").innerHTML ="Boji ka " + boji.vitii() + "vite"; 
-            </script>
+         
 </head>
 <body>
     <header>
@@ -111,7 +90,28 @@
             Kështu edhe një qen shtegtar në Turqi ka potencial të shndërrohet në pjesë të një skandali politik. Para se të sulmohej në mënyrë perfide Boji kishte postuar në Twitter këtë fjali: «Hava güzel, güneş iyi, keyfim yerinde», përkthyer në shqip pak a shumë i bie kështu: një qen në disponim shijon motin e mirë dhe diellin.</p>
             <p id="qeni"></p>
             
-         
+            <script>
+
+            
+                function    Qeni(emri, ngjyra, viti) {
+                  this.emri1 = emri;
+                  this.ngjyra1 = ngjyra;
+                  this.viti1 = viti;
+                 
+                }
+                
+               
+                const boji = new Qeni ("Boji", "zi", 6);
+                
+                
+                
+                boji.vitii = function() {
+                  return this.viti1;
+                };
+                
+                
+                document.getElementById("qeni").innerHTML ="Boji ka " + boji.vitii() + "vite"; 
+                </script>
             
         </div>
     <footer class="footer">

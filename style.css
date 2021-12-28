@@ -316,4 +316,18 @@ text-decoration: none;
             -webkit-transform:skew(5deg,2.5deg);
              transform:skew(5deg,2.5deg);}
             
+             @font-face {
+              font-family: myFirstFont;
+              src: url(sansation_light.woff);
+            }
             
+            @font-face {
+              font-family: myFirstFont;
+              src: url(sansation_bold.woff);
+              font-weight: bold;
+              color: cornflowerblue;
+            }
+
+              div{
+                font-family: myFirstFont;
+              }

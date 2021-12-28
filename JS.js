@@ -11,7 +11,7 @@ function validateform(){
       alert("Emri nuk duhet te jete i zbrazet.");  
       return false;  
     }else if(password.length<6){  
-      alert("Password duhet te jete i gjate me se shumti 6 karaktere.");  
+      alert("Passwordi  duhet te jete i gjate se paku 6 karaktere.");  
       return false;  
       }  
     }  

@@ -13,9 +13,33 @@
 
 <!-- style.css file link-->
    <link rel="stylesheet" href="style.css">
-
-
+   <style>
+    #div1, #div2 {
+    float: left;
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+  }
+</style>
+   <script>
+    function zhvendos(obj) {
+      obj.preventDefault();
+    }
+    
+    function drag(obj) {
+      obj.dataTransfer.setData("text", obj.target.id);
+    }
+    
+    function drop(obj) {
+      obj.preventDefault();
+      var data = obj.dataTransfer.getData("text");
+      obj.target.appendChild(document.getElementById(data));
+    }
+    </script>
 </head>
+
 <body>
 
   <header>
@@ -88,7 +112,7 @@
     Punimet më të mëdha të vjetra ishin në Trepçën e vjetër në fshatin Mazhiq. Këtu është labirinti i tërë i korridoreve<br> dhe kapanxhave dhe kur futesh brenda të sillet mendja vërdallë, sepse duket sikur gjendesh në një botë nëntokësore apo në ferrin e përshkruar <br>nga Dante Aligeri. Këtu hasim në kthina shumë të thella, në serpentina të mihura në mur, në kalime me kalldrëm, në kapanxha prej ku shihet <br>se litari e ka gërryer murin, në pjesë të errëta që ngjanin me varre etj. Në çdo hap shihen gjurmët e goditjeve me çekanë dhe daltë.
  
 
-    
+
     Pas luftës së <br>Parë Botërore hulumtimet e para i pati fituar Rade Pashiqi, i cili në vitin <p id="dr"></p> <script>
         let x = 1925;
         document.getElementById("dr").innerHTML =
@@ -97,6 +121,18 @@
     
     Pas katër vjet<br> hulumtimesh dhe përgatitjeve filloi të nxirrej xehja, më 15 gusht 1930. Më 14 gusht futet në Zveçan shporta e parë me xehe nga punët kërkimore <br>nga Stantërgu. Trepça pas 4 shekujsh pushim, filloi të prodhojë më 17 gusht kur flotacioni u vu në punë. Nga viti në vit miniera Trepça u dha patronëve<br> të saj të rinj, sasi të mëdha xehesh.
 </p>
+
+  <p><b> Perdorimi i Drag and Drop </b></p>
+  
+  <div id="div1" ondrop="drop(event)" ondragover="zhvendos(event)">
+    <img src="Imazhet/spongebob.gif" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+  </div>
+  
+  <div id="div2" ondrop="drop(event)" ondragover="zhvendos(event)"></div>
+  <br><br>
+ 
+
+  <br><br>
 <footer class="footer">
     <div class="footer-0">
         <div class="footer-1">

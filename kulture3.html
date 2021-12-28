@@ -139,11 +139,13 @@ document.getElementById("prototipi").innerHTML =
                     </form>
                 </div>
                   <div class="footer-3">
-                    <h3 id="h3"> Rrini te informuar permes emailit:</h3>
-                    <input type="email" placeholder="Shenoni emailin tuaj" id="footer-email"> <br>
-                    <input type="password" placeholder="Shenoni paswordin tuaj" id="footer-email"> 
-                    <input type="submit" value="Regjistrohu" id="footer-email-buton">
-                
+                    <form action="index.html" name="regjistrimi" method="post"  onsubmit="return validateform()">
+                        <h3 id="h3"> Rrini te informuar permes emailit:</h3>
+                        <input type="email"name="email" placeholder="Shenoni emailin tuaj" id="footer-email"> <br>
+                        <input type="password" name="password" placeholder="Shenoni paswordin tuaj" id="footer-email"> 
+                        <input type="submit" value="Regjistrohu" id="footer-email-buton">
+                        <script src="JS.js"></script>
+                    </form>
                 
                 </div>
                 </div>

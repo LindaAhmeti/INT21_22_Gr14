@@ -110,7 +110,14 @@ const Maximilian = new Person1("Maximilian", "Lumbert", 50,"Italian");
 document.getElementById("prototipi").innerHTML =
 "Nacionaliteti i Maximilian Lumbertit ishte " + Maximilian.nacionaliteti2+".";
 </script>
-
+<canvas id="el.canvas" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+    
+    <script>
+    var c = document.getElementById("el.canvas");
+    var ctx = c.getContext("2d");
+    ctx.font = "30px Arial";
+    ctx.fillText("LajmeFlash",10,50);
+    </script>
 
             <footer class="footer">
                 <div class="footer-0">

@@ -192,10 +192,25 @@
     <input type="radio" name="vlerso" value="5">5<br>
     
 </label>
-
-<button type="button" onclick="document.getElementById('pyetesori').innerHTML='<h1> Faleminderit!</h1>' ">Dergo</button>
-    
 </form>
+<br>
+
+<form name="forma"  onsubmit="return validate()" method="post">
+    Diqka per fund? <input type="text" name="name">
+    <input type="submit" value="Perfundo">
+  </form>
+<script>
+    function validate() {
+      let x = document.forms["forma"]["name"].value;
+      if (x == "") {
+        alert("Kjo fushe duhet plotesuar!");
+        return false;
+      }
+    }
+    </script>
+</form>
+<br><br>
+<button type="button" onclick="document.getElementById('pyetesori').innerHTML='<h1> Faleminderit!</h1>' ">Dergo</button>
 </div>
  
 

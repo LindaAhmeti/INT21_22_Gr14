@@ -12,6 +12,24 @@
       
       <!-- style.css file link-->
          <link rel="stylesheet" href="style.css">
+
+         <script>
+              function    Qeni(emri, ngjyra, viti) {
+                  this.emri1 = emri;
+                  this.ngjyra1 = ngjyra;
+                  this.viti1 = viti;
+                 
+                }
+                
+               
+                const boji = new Qeni ("Boji", "zi", 6);
+                
+                
+                
+                boji.vitii = function() {
+                  return this.viti1;
+                };
+         </script>
          
 </head>
 <body>
@@ -87,29 +105,12 @@
             Duket se ka njerëz që janë xhelozë që Boji është bërë shumë i njohur. Duket se ka rivalë politikë të kryetarit të Stambollit, të cilët mendojnë se qeni Boji mund t'ia rrisë popullaritetin Ekrem Imamoglut. Ai i përket partisë CHP, e cila në nivel të Turqisë është kundërshtarja kryesore e Rexhep Taip Erdoanit. Të premten e kaluar në Twitter u shfaq një fotografi. Aty shihej një ulëse e ndotur e tramvajit me shënimin se «qeni i kryetarit të qytetit» e ka kryer nevojën në transportin publik. Pas kësaj akuze zëdhënësi i kryetarit të qytetit postoi një incizim nga kamera e sigurisë. Aty nuk shihej Boji duke bërë hatanë, por një burrë që tinëzisht ndot karrigen e tramvajit me jashtëqitje qeni. Në profilin e tij
             
             Boji bëri të ditur se ndihet i ofenduar nga akuza. Ai tha se atë ditë nuk kishte hipur në tramvaj, por kishte qenë te veterinari. Fotografia që njolloste Bojin u përhap nga një profil në Twitter, i cili është i afërt me AKP-në e Erdoanit dhe njihet për sulme kundër kryetarit të Stambollit, Ekrem Imamoglu.
-            Kështu edhe një qen shtegtar në Turqi ka potencial të shndërrohet në pjesë të një skandali politik. Para se të sulmohej në mënyrë perfide Boji kishte postuar në Twitter këtë fjali: «Hava güzel, güneş iyi, keyfim yerinde», përkthyer në shqip pak a shumë i bie kështu: një qen në disponim shijon motin e mirë dhe diellin.</p>
-            <p id="qeni"></p>
+            Kështu edhe një qen shtegtar në Turqi ka potencial të shndërrohet në pjesë të një skandali politik. Para se të sulmohej në mënyrë perfide Boji kishte postuar në Twitter këtë fjali: «Hava güzel, güneş iyi, keyfim yerinde», përkthyer në shqip pak a shumë i bie kështu: një qen në disponim shijon motin e mirë dhe diellin.
+            <p id="qeni">
             
             <script>
-
+                
             
-                function    Qeni(emri, ngjyra, viti) {
-                  this.emri1 = emri;
-                  this.ngjyra1 = ngjyra;
-                  this.viti1 = viti;
-                 
-                }
-                
-               
-                const boji = new Qeni ("Boji", "zi", 6);
-                
-                
-                
-                boji.vitii = function() {
-                  return this.viti1;
-                };
-                
-                
                 document.getElementById("qeni").innerHTML ="Boji ka " + boji.vitii() + "vite"; 
                 </script>
             

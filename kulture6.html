@@ -14,7 +14,43 @@
 <!-- style.css file link-->
    <link rel="stylesheet" href="style.css">
 
-
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script>
+   $(document).ready(function(){
+     $("button").click(function(){
+       $("#4").fadeToggle();
+       $("#2").fadeToggle("slow");
+       $("#3").fadeToggle(3000);
+     });
+   });
+   </script>
+  <script> $(document).ready(function(){
+    $("#titulli").click(function(){
+      $("#foto").slideToggle("slow");
+    });
+  });
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("p").click(function(){
+        $("li").remove("#fshij");
+      });
+    });
+    </script>
+  <style> 
+  #panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+  }
+  
+  #panel {
+    padding: 50px;
+    display: none;
+  }
+  </style>
+  
 </head>
 <body>
 
@@ -62,10 +98,10 @@ Desku informativ.
 
   </div>
 </header>
-<h1>
+<h1 id="titulli">
     Letersia e Rilindjes kombetare shqiptare
     </h1> <br><br><br>
-<img src="Imazhet/kultura6.jpg"style="transform:rotate(90deg)">
+<img src="Imazhet/kultura6.jpg" id="foto"style="transform:rotate(90deg)">
 
 <br>
 <br>
@@ -74,10 +110,10 @@ Desku informativ.
     <div class="nested-list">
     <ul style="list-style-type: square;;">Letersia shqiptare ndahet ne: <br> <br>
     <li> <span class="highlight"> Letersine e vjeter: </span>
-        <ol id="skew">
-            <li >Pjeter Budi</li>
-            <li>Pjeter Bogdani</li>
-            <li>Gjon Buzuku </li>
+        <ol ><button>Autoret</button>
+            <li id="4" >Pjeter Budi</li>
+            <li id="2">Pjeter Bogdani</li>
+            <li id="3">Gjon Buzuku </li>
 
         </ol> </li> 
     <li><span class="highlight">Letersine e Rilindjes: </span>
@@ -89,11 +125,12 @@ Desku informativ.
         </ol> </li>
         <li><span class="highlight">Letersine e moderne: </span>
             <ol id="rotate">
-                <li >Ali Podrimja</li>
+                <li id="fshij">Sami Frasheri</li>
                 <li>Ismail Kadare</li>
                 <li>Rexhep Qosja</li>
     
             </ol> </li>
+            
             <p id="p1"></p>
             <p id="p2"></p>
             
@@ -108,7 +145,8 @@ Desku informativ.
     </ul></div>
     <br>
     <br>
-    <br><br>
+    <br><br><p ><b>
+        Fshij autorin qe nuk i takon letersise moderne duke klikuar </b><b style="color: red;"> ketu </b></p>
 <br>Kjo lëvizje, që nis nga mesi i shekullit XIX dhe arrin deri në vitin 1912, quhet Rilindje Kombëtare, prandaj edhe letërsia e kësaj periudhe quhet letërsi e Rilindjes Kombëtare. <br>
  Kjo është kryesisht një letërsi patriotike me frymë demokratike e popullore. Tema kryesore e saj ishte dashuria për atdheun dhe popullin, evokimi i së kaluarës heroike dhe lufta <br>për çlirimin kombëtar e shoqëror.
 

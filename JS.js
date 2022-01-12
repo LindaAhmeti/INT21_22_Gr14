@@ -8,7 +8,7 @@ function validateform(){
     var password=document.regjistrimi.password.value;  
       
     if (name==null || name==""){  
-      alert("Emri nuk duhet te jete i zbrazet.");  
+      alert("Fusha per email duhet plotesuar.");  
       return false;  
     }else if(password.length<6){  
       alert("Passwordi  duhet te jete i gjate se paku 6 karaktere.");  

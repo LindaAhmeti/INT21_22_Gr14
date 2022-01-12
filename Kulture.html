@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kulturë</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.m
+in.js"></script>
 </head>
 
 <body>
@@ -127,30 +130,44 @@
     </tr>
     </table>
 </div>
-
+<script>
+  $(document).ready(function(){
+  $(".jquery").on({
+    mouseenter: function(){
+      $(this).css("color", "lightgray");
+    },  
+    mouseleave: function(){
+      $(this).css("color", "darkblue");
+    }, 
+    click: function(){
+      $(this).css("color", "violet");
+    }  
+  });
+});
+</script>
 <br>
 <br>
 <div class="index-news">
     <article>
         <img src="Imazhet/kultura2.jpg">
-       <a href="kulture2.html"> <h3><b>Fouillée dhe Konica për përfaqësuesit e sotëm të helenëve të lashtë</b></h3></a>
+       <a href="kulture2.html"> <h3 class="jquery"><b>Fouillée dhe Konica për përfaqësuesit e sotëm të helenëve të lashtë</b></h3></a>
             </article>
             <article>
                  <img src="Imazhet/kultura3.jpg">
-                <a href="kulture3.html">  <h3><b>Ekspedita e Maksimilian Lambercit, në Shqipërinë e vitit 1916</b></h3></a>
+                <a href="kulture3.html">  <h3 class="jquery"><b>Ekspedita e Maksimilian Lambercit, në Shqipërinë e vitit 1916</b></h3></a>
                     </article>
                     <article>
                         <img src="Imazhet/kultura4.jpg">
-                        <a href="kulture4.html"><h3><b>Të dhënat për Trepçën nga Arkivi Shtetëror i Kosovës</b></h3></a>
+                        <a href="kulture4.html"><h3 class="jquery"><b>Të dhënat për Trepçën nga Arkivi Shtetëror i Kosovës</b></h3></a>
                             </article>
                             <article>
                                 <img src="Imazhet/kultura5.jpg">
-                                <a href="kulture5.html"><h3><b>Fati tragjik i autorit të veprës “Kosova, djepi i shqiptarizmit”: Enveri e akuzoi se hodhi gurë kundër Jugosllavisë motër</b></h3></a>
+                                <a href="kulture5.html"><h3 class="jquery"><b>Fati tragjik i autorit të veprës “Kosova, djepi i shqiptarizmit”: Enveri e akuzoi se hodhi gurë kundër Jugosllavisë motër</b></h3></a>
                                     </article>
                                     <article>
                                     <img src="Imazhet/kultura6.jpg">
                                    
-                                <a href="kulture6.html"><h3><b>Letersia e Rilindjes kombetare shqiptare</b></h3></a>
+                                <a href="kulture6.html"><h3 class="jquery"><b>Letersia e Rilindjes kombetare shqiptare</b></h3></a>
                                     </article>
 </div>
 <br><br><br> <br><br><br><br><br>

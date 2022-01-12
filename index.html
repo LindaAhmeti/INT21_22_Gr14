@@ -19,8 +19,16 @@
     $(document).ready(function(){
 
         $("#etc1").slideUp(1000).slideDown(1000);
-   
-  });
+        $("#pp1").click(function() {
+
+       $( "#etc1" ).hide();
+       });
+
+       $("#pp2").click(function() {
+       $( "#etc1" ).show();
+    });
+    });
+
 
 </script>
 </head>
@@ -129,9 +137,10 @@ Desku informativ.
     </tr>
     
 </table>
- 
-<a href="https://www.etc-ks.com/">
-<img src="Imazhet/b.friday.jpg" alt="black" id="etc1" style="margin: 5% 15% 5% 15%;"></a>
+<div style="text-align: center;">
+ <button id="pp1" style="border-style: none; background-color: seashell; ">Largo reklamen</button>  <button id="pp2"  style="border-style: none; background-color: seashell;">Shfaq reklamen</button> </div>
+<a href="https://www.etc-ks.com/"> 
+<img src="Imazhet/b.friday.jpg" alt="black" id="etc1" style="margin: 5% 15% 5% 15%;"></a> 
 
 
 

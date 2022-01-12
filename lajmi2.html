@@ -12,6 +12,24 @@
         
         <!-- style.css file link-->
            <link rel="stylesheet" href="style.css">
+           <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   <script src="jquery-3.5.1.min.js"></script>
+   <script>
+    $(document).ready(function(){
+
+        $("#uton1").on("click",function(){
+            $("#fotowp").fadeToggle(200);
+        });
+        $( "#kliko" ).click( function() {
+      $( "#tekst" ).animate({
+        fontSize: "+=5px",
+        letterSpacing: "+=1px"
+      }, 1000 );   
+    });
+   
+  });
+
+</script>
 </head>
 <body>
     <header>
@@ -56,7 +74,8 @@
     <h2 style="text-transform: uppercase;text-shadow: 2px 2px;">  WhatsAppi ndryshon politikat e privatësisë pas gjobës rekord</h2>
     <br><br>
     <img src="Imazhet/wp.jpg" alt="wp" style="height: 350px; width: 400px; "> <br><br>
-    <p style="float: right; text-align: left; margin-left: 70px; margin-right: 70px;">WhatsAppi po rishkruan politikën e tij të privatësisë si rezultat i një gjobe të madhe për mbrojtjen e të dhënave në fillim të këtij viti.
+    <p style="color: red; margin-left: 0;">Nese deshironi te rrisni madhesine e shkronjave kliko <button id="kliko"> Ketu</button>
+    <p id="tekst" style="float: right; text-align: left; margin-left: 70px; margin-right: 70px;">WhatsAppi po rishkruan politikën e tij të privatësisë si rezultat i një gjobe të madhe për mbrojtjen e të dhënave në fillim të këtij viti.
 
         Pas një hetimi, mbikëqyrësi irlandez i mbrojtjes së të dhënave lëshoi ​​një gjobë prej 225 milionë eurove - e dyta më e madhe në histori mbi GDPR - dhe urdhëroi WhatsAppin të ndryshojë politikat e saj.
         
@@ -69,6 +88,11 @@
         “Nuk ka asnjë ndryshim në proceset tona apo marrëveshjet kontraktuale me përdoruesit dhe përdoruesve nuk do t'u kërkohet të bien dakord për asgjë ose të ndërmarrin ndonjë veprim për të vazhduar përdorimin e WhatsApp”, tha kompania, duke njoftuar ndryshimin.
         
         Politika e re hyn në fuqi menjëherë. </p>
+          </div>
+
+          <div>
+              <button id="buton1" style="border: none; background-color: wheat;margin-left: 5%; ">  Largo/Vendos foton</button> <br> <br>
+              <img src="Imazhet/WPP.jpg" alt="wp" id="fotowp" style="margin-left:5%;">
           </div>
 </div>  <br> <br><br><br> <br><br>
 

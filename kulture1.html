@@ -13,6 +13,9 @@
 
 <!-- style.css file link-->
    <link rel="stylesheet" href="style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.m
+in.js"></script>
+<script src="jquery-3.5.1.min.js"></script>
 
 
 </head>
@@ -136,6 +139,17 @@ Vlen të ceket se shkëmbimet kulturore mes Shqipërisë e Kosovës, me vizita t
         
                 </form>
             </div>
+            <script>
+                $(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("color", "darkred");
+  });
+  $("input").blur(function(){
+    $(this).css("color", "green");
+  });
+});
+</script>
+            </script>
               <div class="footer-3">
                 <form action="index.html" name="regjistrimi" method="post"  onsubmit="return validateform()">
                     <h3 id="h3"> Rrini te informuar permes emailit:</h3>

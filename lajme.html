@@ -13,8 +13,21 @@
 
 <!-- style.css file link-->
    <link rel="stylesheet" href="style.css">
+   <script src="jquery-3.5.1.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.m
+in.js"></script>
 
+<script>
+  $(document).ready(function(){
+    $("button").click(function(){
+      $(".etc").toggle('slow');
+    });
+  });
+  
 
+  
+    </script>
+  
 </head>
 <body>
 
@@ -70,7 +83,11 @@ Desku informativ.
      <li class="li-lajme">DFK: Realizimi i projekteve për Podujevën varet se kush do t’i udhëheqë drejtoritë. </li> 
      <li class="li-lajme"> Gërvalla takohet me Escobarin, diskutojnë për dialogun </li>   
      <li class="li-lajme"> Ekzekutohet pagesa e pensioneve me shtesën prej 100 euro </li>
-     <li class="li-lajme">  FREE FRIDAY ZBRITJA MË E MADHE E VITIT NË ETC !!</li>
+     <li class="li-lajme">  FREE FRIDAY ZBRITJA MË E MADHE E VITIT NË ETC !! <button>Me shume</button>
+      <p class="etc">Vetem sot keni zbritje deri ne 70%</p>
+      <p class="etc">Nxitoni dhe kapni ofertat me te mira</p>
+      <p class="etc">Vetem ne ETC</p></li>
+     
 
        </td>
   <td style="text-align: center;"> 
@@ -163,7 +180,7 @@ Desku informativ.
 </tr>
     </table>
     
-
+  
 
     <footer class="footer">
       <div class="footer-0">

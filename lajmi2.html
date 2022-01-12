@@ -17,9 +17,15 @@
    <script>
     $(document).ready(function(){
 
-        $("#buton1").on("click",function(){
+        $("#uton1").on("click",function(){
             $("#fotowp").fadeToggle(200);
         });
+        $( "#kliko" ).click( function() {
+      $( "#tekst" ).animate({
+        fontSize: "+=5px",
+        letterSpacing: "+=1px"
+      }, 1000 );   
+    });
    
   });
 
@@ -68,7 +74,8 @@
     <h2 style="text-transform: uppercase;text-shadow: 2px 2px;">  WhatsAppi ndryshon politikat e privatësisë pas gjobës rekord</h2>
     <br><br>
     <img src="Imazhet/wp.jpg" alt="wp" style="height: 350px; width: 400px; "> <br><br>
-    <p style="float: right; text-align: left; margin-left: 70px; margin-right: 70px;">WhatsAppi po rishkruan politikën e tij të privatësisë si rezultat i një gjobe të madhe për mbrojtjen e të dhënave në fillim të këtij viti.
+    <p style="color: red; margin-left: 0;">Nese deshironi te rrisni madhesine e shkronjave kliko <button id="kliko"> Ketu</button>
+    <p id="tekst" style="float: right; text-align: left; margin-left: 70px; margin-right: 70px;">WhatsAppi po rishkruan politikën e tij të privatësisë si rezultat i një gjobe të madhe për mbrojtjen e të dhënave në fillim të këtij viti.
 
         Pas një hetimi, mbikëqyrësi irlandez i mbrojtjes së të dhënave lëshoi ​​një gjobë prej 225 milionë eurove - e dyta më e madhe në histori mbi GDPR - dhe urdhëroi WhatsAppin të ndryshojë politikat e saj.
         

@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sport</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    var div = $(".sporti");  
+    div.animate({center: '100px'}, "slow");
+    div.animate({fontSize: '3em'}, "slow");
+  });
+});
+</script> 
 </head>
 <body>
     
@@ -52,6 +62,14 @@ Desku informativ.
 </div>
     
 </header>    
+<br>
+<br>
+<br>
+<button>Kliko</button>
+<div class="sporti"style="background:lightgreen;height:95px;width:200px;position:absolute;color:white"> Sport</div>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>

@@ -8,7 +8,14 @@
 
 <!-- style.css file link-->
    <link rel="stylesheet" href="style.css">
-
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script>
+   $(document).ready(function(){
+     $("button").click(function(){
+       alert("Te dhenat personale: " + $("#test").val());
+     });
+   });
+   </script>
 
 <style>
     button {
@@ -112,8 +119,8 @@
       </div>
     </header>
     <p style="text-align: left;"> <b> Ndrysho ngjyren e background-it: </b><br>
-        <span style="cursor: pointer; border: 1px solid black; margin:5px 100px 150px 0; float: left; display: inline-block;" onclick="ndryshoNgjyren('pink');">Pink</span>
-        <span style="cursor: pointer; border: 1px solid  black;  margin:5px 100px 150px 0; float: left;display: inline-block;" onclick="ndryshoNgjyren('white');">Bardhe</span>
+        <span style="cursor: pointer; border: 1px solid black; margin:5px 100px 150px 0; float: left; " onclick="ndryshoNgjyren('pink');">Pink</span>
+        <span style="cursor: pointer; border: 1px solid  black;  margin:5px 100px 150px 0; float: left;" onclick="ndryshoNgjyren('white');">Bardhe</span>
         <script src="JS.js"></script>
     </p>
     
@@ -138,7 +145,7 @@
    
     <form class="emri">
        <label><b>Emri dhe mbiemri:</b><br>  <br>
-       <input type="text" name="Emri dhe mbiemri:" placeholder="Sheno" autocomplete="on" style="color: rgb(97, 157, 175); background-color: floralwhite; height: 30px;width: 150px;">
+       <input type="text"id="test"value="emri mbiemri"  style="color: rgb(97, 157, 175); background-color: floralwhite; height: 30px;width: 150px;">
        </label><br><br>
     </form>
 
@@ -204,7 +211,7 @@
     
 </form>
 <br><br>
-<button type="button" onclick="document.getElementById('pyetesori').innerHTML='<h1> Faleminderit!</h1>' ">Dergo</button>
+<button  onclick="document.getElementById('pyetesori').innerHTML='<h1> Faleminderit!</h1>' ">Dergo</button>
 </div>
  
 

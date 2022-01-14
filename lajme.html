@@ -27,6 +27,33 @@ in.js"></script>
 
   
     </script>
+     <script>
+    /*  var clickCount = 1;
+        function clickCounter() 
+        {
+          if (localStorage.clickcount) 
+          {
+            localStorage.clickcount = Number(localStorage.clickcount) + 1;
+          } 
+          else 
+          {
+            localStorage.clickcount = 1;
+          }
+          document.getElementById("result").innerText = "You have clicked the button " +
+          localStorage.clickcount + " time(s).";
+      
+        }*/
+
+        // local storage
+      /*   if (typeof(Storage) !== "undefined") {
+        // // Store
+        localStorage.setItem("lastname", "Smith");
+        // // Retrieve
+        document.getElementById("result").innerText = localStorage.getItem("lastname");
+        } else {
+      document.getElementById("result").innerText = "Sorry, your browser does not support Web Storage...";
+         }*/
+        </script>
   
 </head>
 <body>
@@ -179,8 +206,38 @@ Desku informativ.
     </p></td>
 </tr>
     </table>
-    
-  
+   
+        <p>Count numbers: <output id="result"></output></p>
+<button onclick="startWorker()">Start Worker</button> 
+<button onclick="stopWorker()">Stop Worker</button>
+
+
+
+
+
+<script>
+var w;
+
+function startWorker() {
+  if(typeof(Worker) !== "undefined") {
+    if(typeof(w) == "undefined") {
+      w = new Worker("JS.js");
+    }
+    w.onmessage = function(event) {
+      document.getElementById("result").innerHTML = event.data;
+    };
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
+  }
+}
+
+function stopWorker() { 
+  w.terminate();
+  w = undefined;
+}
+</script>
+
+
 
     <footer class="footer">
       <div class="footer-0">

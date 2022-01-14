@@ -19,13 +19,8 @@
 
 <script>
 $(document).ready(function(){
-  $("#button2").click(function(){
-    $("#etc1").hide(1000);
-    alert("Klikoni OK per te larguar");
-  });
-
-
-      $("button").click(function(){
+ 
+      $("#zbritje").click(function(){
         $("a").attr("href", "https://www.etc-ks.com/");
       });
     
@@ -35,10 +30,13 @@ $(document).ready(function(){
 
 
        $( "#etc1" ).hide();
+       alert("Klikoni OK per te larguar");
        });
 
        $("#pp2").click(function() {
-       $( "#etc1" ).show();
+       $( "#etc1" ).show( 'slow', function(){
+        alert("Foto tani eshte shfaqur");
+       });
     });
     });
 
@@ -155,8 +153,7 @@ Desku informativ.
 <a href="https://www.etc-ks.com/"> 
 <img src="Imazhet/b.friday.jpg" alt="black" id="etc1" style="margin: 5% 15% 5% 15%;"></a> 
 
-
-<button id="button2"style="background-color: darkred;color: white;">Heq Reklamen</button><button style="background-color: darkgreen;color: white;">Kliko ETC</button><a href="https://www.etc-ks.com/"id="zbritje">ETC</a>
+<a href="https://www.etc-ks.com/"id="zbritje" style="text-decoration: none; color: black; cursor: pointer; float: left;">ETC-linku</a>
 
 
 

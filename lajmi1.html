@@ -12,7 +12,14 @@
       
       <!-- style.css file link-->
          <link rel="stylesheet" href="style.css">
-
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script>
+         $(document).ready(function(){
+           $("p").mouseout(function(){
+             $("p").remove(".lajmii");
+           });
+         });
+         </script>
          <script>
               function    Qeni(emri, ngjyra, viti) {
                   this.emri1 = emri;
@@ -78,7 +85,7 @@
         column-gap: 90px;
         column-rule-style: solid;
         column-rule-width: 1px;
-        column-rule-color: lightblue; "> 
+        column-rule-color: lightblue;  " class="lajmii"> 
             <br><br>
             Boji është një yll.
             Boji i ka ka gati 128 mijë ndjekës në Twitter.

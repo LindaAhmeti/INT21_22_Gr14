@@ -11,14 +11,17 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script>
    $(document).ready(function(){
-     $("button").click(function(){
+     $("#button").click(function(){
        alert("Te dhenat personale: " + $("#test").val());
      });
    });
+
+ 
+
    </script>
 
 <style>
-    button {
+    #button {
   background-color: #4CAF50;
   border: none;
   padding: 16px 32px;
@@ -119,15 +122,14 @@
       </div>
     </header>
     <p style="text-align: left;"> <b> Ndrysho ngjyren e background-it: </b><br>
-<<<<<<< HEAD
+
         <span style="cursor: pointer; border: 1px solid black; margin:5px 100px 150px 0; float: left; " onclick="ndryshoNgjyren('pink');">Pink</span>
         <span style="cursor: pointer; border: 1px solid  black;  margin:5px 100px 150px 0; float: left;" onclick="ndryshoNgjyren('white');">Bardhe</span>
-=======
-        <span style="cursor: pointer; border: 1px solid black; margin:5px 100px 150px 0; display: inline-block;" onclick="ndryshoNgjyren('pink');">Pink</span>
-        <span style="cursor: pointer; border: 1px solid  black;  margin:5px 100px 150px 0; display: inline-block;" onclick="ndryshoNgjyren('white');">Bardhe</span>
->>>>>>> ed33af9f7a2ae65bd8fdf01e58613e45cf2bedf7
+
         <script src="JS.js"></script>
     </p>
+    
+                
     
     <script>
         x = prompt("Sa vjeq jeni?", "");
@@ -205,10 +207,11 @@
     
 </label>
 </form>
+
 <br>
 
 <form name="forma"  onsubmit="return validate()" method="post">
-    Diqka per fund? <input type="text" name="name">
+    Diqka per fund?<input type="text" name="name">
     <input type="submit" value="Perfundo">
     <script src="JS.js"></script>
   </form>
@@ -216,9 +219,29 @@
     
 </form>
 <br><br>
-<button  onclick="document.getElementById('pyetesori').innerHTML='<h1> Faleminderit!</h1>' ">Dergo</button>
+<button id="button" onclick="document.getElementById('pyetesori').innerHTML='<h1> Faleminderit!</h1>' ">Dergo</button>
 </div>
  
-
+<button onclick="getLocation()" style="border: none; background-color: beige; margin-left: 600px; margin-bottom: 30px; border: none;
+padding: 16px 32px;text-align: center;text-decoration: none;font-size: 16px;">Shiko lokacionin</button>
+                
+                <p id="lokacioni"></p>
+                
+                <script>
+                var x = document.getElementById("lokacioni");
+                
+                function getLocation() {
+                  if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                  } else { 
+                    x.innerHTML = "Geolocation is not supported by this browser.";
+                  }
+                }
+                
+                function showPosition(position) {
+                  x.innerHTML = "Latitude: " + position.coords.latitude + 
+                  "<br>Longitude: " + position.coords.longitude;
+                }
+                </script>
 </body>
 </html>

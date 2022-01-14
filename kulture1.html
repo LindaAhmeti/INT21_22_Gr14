@@ -120,7 +120,24 @@ document.getElementById("pare").innerHTML = text;
 
 <br><b><i>
 Vlen të ceket se shkëmbimet kulturore mes Shqipërisë e Kosovës, me vizita të ndërsjella të studentëve, pedagogëve e krijuesve, ndërpriten<br> pas demonstratave të vitit 1981 në Kosovë.</i> </b></p>
-        <img src="Imazhet/kultura1.1.jpg">
+        <img src="Imazhet/kultura1.1.jpg"id="img1">
+        <script>
+            $(document).ready(function(){
+              $("#btn1").click(function(){
+                $("#img1").before("<b>para fotos</b>");
+              });
+            
+              $("#btn2").click(function(){
+                $("#img1").after("<i>pas fotos</i>");
+              });
+            });
+            </script>
+            </head>
+            <body>
+            
+          
+            <button id="btn1">Shto para</button>
+            <button id="btn2">Shto pas</button>
 
         <footer class="footer">
             <div class="footer-0">
@@ -149,7 +166,7 @@ Vlen të ceket se shkëmbimet kulturore mes Shqipërisë e Kosovës, me vizita t
   });
 });
 </script>
-            </script>
+          
               <div class="footer-3">
                 <form action="index.html" name="regjistrimi" method="post"  onsubmit="return validateform()">
                     <h3 id="h3"> Rrini te informuar permes emailit:</h3>
